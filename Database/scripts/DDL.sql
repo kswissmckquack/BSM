@@ -15,5 +15,3 @@ CREATE TABLE IF NOT EXISTS Purchases (
     CONSTRAINT PK_PurchaseId PRIMARY KEY (PK_PurchaseId),
     CONSTRAINT FK_Purchases_CategoryId FOREIGN KEY (FK_CategoryId) REFERENCES Categories (PK_CategoryId)
 ) ENGINE=INNODB;
-
-DROP TABLE Purchases
