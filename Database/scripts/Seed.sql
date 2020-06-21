@@ -19,4 +19,7 @@ INSERT INTO Categories (CategoryName) VALUES
 ('Spotify'),
 ('Netflix'),
 ('AMC A List'),
-('Credit Card Payments');
+('Credit Card Payments'),
+('Investments');
+
+SELECT * FROM Categories ORDER BY CategoryName

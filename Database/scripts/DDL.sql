@@ -10,7 +10,10 @@ CREATE TABLE IF NOT EXISTS Categories (
 CREATE TABLE IF NOT EXISTS Purchases (
 	PK_PurchaseId INT AUTO_INCREMENT,
     FK_CategoryId INT, 
-    Cost DECIMAL(13,2) NOT NULL,
+    Cost DECIMAL(13,2) NULL,
+    Date Date NOT NULL,
     CONSTRAINT PK_PurchaseId PRIMARY KEY (PK_PurchaseId),
     CONSTRAINT FK_Purchases_CategoryId FOREIGN KEY (FK_CategoryId) REFERENCES Categories (PK_CategoryId)
 ) ENGINE=INNODB;
+
+DROP TABLE Purchases
